@@ -1,0 +1,17 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+metadata:
+  name: "validatens.example.com"
+webhooks:
+- name: "niksw7.sample.com"
+  failurePolicy: Fail
+  rules:
+  - apiGroups:   ["apps"]
+    apiVersions: ["v1"]
+    operations:  ["CREATE"]
+    resources:   ["deployments"]
+  clientConfig:
+    url: "https://asia-south1-plucky-plexus-272607.cloudfunctions.net/testwebhook/"
+  admissionReviewVersions: ["v1", "v1beta1"]
+  sideEffects: NoneOnDryRun
+  timeoutSeconds: 5
