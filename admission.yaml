@@ -11,7 +11,7 @@ webhooks:
     operations:  ["CREATE"]
     resources:   ["deployments"]
   clientConfig:
-    url: "https://asia-south1-plucky-plexus-272607.cloudfunctions.net/testwebhook/"
+    url: "https://mydomain/testwebhook/"
   admissionReviewVersions: ["v1", "v1beta1"]
   sideEffects: NoneOnDryRun
   timeoutSeconds: 5
