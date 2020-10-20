@@ -21,7 +21,7 @@ Cloud functions are simply lambda functions
 
 Here in this code we have blocked **blockdns **  namespace from deploying.(Can be changed to run time fetch)
 
-(Google cloud or GKE cluster)
+## (Google cloud or GKE cluster)
 
 ```
 /**
@@ -75,7 +75,7 @@ if (reqns == "blockedns"){
 
 
 
-###Aks cluster (Azure)
+## Aks cluster (Azure)
 ### The below code is a richer format which connects to azure appconfig where we can define key as namespace and value as either true or false
 
 ```
